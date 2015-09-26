@@ -7,6 +7,9 @@ return [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
+        'keyStorage' => [
+            'class' => 'maddoger\core\components\KeyStorage',
+        ],
         /*'i18n' => [
             'class' => 'maddoger\core\i18n\I18N',
             'availableLanguages' => [

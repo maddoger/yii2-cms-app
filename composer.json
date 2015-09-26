@@ -11,7 +11,8 @@
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "2.0.*",
-    "yiisoft/yii2-swiftmailer": "*"
+    "yiisoft/yii2-swiftmailer": "*",
+    "maddoger/yii2-cms-core": "dev-master"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "*",
@@ -25,5 +26,13 @@
       "npm-asset-library": "vendor/npm",
       "bower-asset-library": "vendor/bower"
     }
-  }
+  },
+
+
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:maddoger/yii2-cms-core.git"
+    }
+  ]
 }

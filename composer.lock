@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "531b780a3f5871cb923e60fabef7f795",
-    "content-hash": "e873419d047d26a020f57ee669014b38",
+    "hash": "116a9e13fc96c38d06b86aa4a3df6e65",
+    "content-hash": "1c6c8aa1b5283cbefbf0af9f62417199",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -267,6 +267,47 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
+        },
+        {
+            "name": "maddoger/yii2-cms-core",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maddoger/yii2-cms-core.git",
+                "reference": "898f450613ac47d5362657d134dcc1a6913f7e25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/898f450613ac47d5362657d134dcc1a6913f7e25",
+                "reference": "898f450613ac47d5362657d134dcc1a6913f7e25",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "maddoger\\core\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Vitaliy Syrchikov",
+                    "email": "maddoger@gmail.com"
+                }
+            ],
+            "description": "CMS Core extension for Yii2.",
+            "support": {
+                "source": "https://github.com/maddoger/yii2-cms-core/tree/master",
+                "issues": "https://github.com/maddoger/yii2-cms-core/issues"
+            },
+            "time": "2015-09-26 17:44:02"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -771,7 +812,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "maddoger/yii2-cms-core": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

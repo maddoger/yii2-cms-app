@@ -10,6 +10,11 @@ return [
     ],
 
     'components' => [
+
+        'user' => [
+            'identityClass' => 'common\\models\\User'
+        ],
+
         'urlManager' => [
 //            'enableStrictParsing' => true,
 //            'enablePrettyUrl' => true,

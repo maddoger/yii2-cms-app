@@ -4,8 +4,8 @@ return [
         'db' => [
             'class' => 'yii\db\Connection',
             'dsn' => 'mysql:host=localhost;dbname=syrchikov_name',
-            'username' => 'syrchikov_name',
-            'password' => 'ze0xeiDu',
+            'username' => 'user',
+            'password' => 'user',
             'charset' => 'utf8',
             //'tablePrefix' => 'tbl_',
             //'enableSchemaCache' => true,
