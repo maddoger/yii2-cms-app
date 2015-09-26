@@ -1,0 +1,29 @@
+{
+  "name": "maddoger/yii2-cms-app",
+  "description": "Yii2 CMS Application Template",
+  "keywords": [
+    "yii2",
+    "application",
+    "cms"
+  ],
+  "homepage": "https://github.com/maddoger/yii2-cms-app/",
+  "type": "project",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "2.0.*",
+    "yiisoft/yii2-swiftmailer": "*"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "*",
+    "yiisoft/yii2-gii": "*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
