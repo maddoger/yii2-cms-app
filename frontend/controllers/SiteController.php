@@ -2,14 +2,45 @@
 namespace frontend\controllers;
 
 use common\models\User;
+use frontend\models\SiteControllerConfiguration;
+use maddoger\core\behaviors\ConfigurationBehavior;
+use maddoger\core\behaviors\ConfigurationModelBehavior;
 use Yii;
 use yii\web\Controller;
 
 /**
  * Site controller
+ *
+ * @property \frontend\models\SiteControllerConfiguration $configuration
  */
 class SiteController extends Controller
 {
+    public $defaultAction = 'index';
+
+    public $layout = 'main';
+
+    public function behaviors()
+    {
+        return [
+
+            //Test without model IT WORKS)
+            /*[
+                'class' => ConfigurationBehavior::className(),
+                'attributes' => [
+                    'defaultAction' => 'index',
+                    'layout' => 'main',
+                ],
+                'autoLoad' => false,
+            ],*/
+
+            [
+                'class' => ConfigurationModelBehavior::className(),
+                'modelClass' => SiteControllerConfiguration::className(),
+            ]
+
+        ];
+    }
+
     /**
      * @inheritdoc
      */
@@ -27,21 +58,24 @@ class SiteController extends Controller
         //Some tests
         Yii::$app->user->login(User::findIdentity(101));
 
-        /** @var \maddoger\core\components\KeyStorage $keyStorage */
-        $keyStorage = Yii::$app->keyStorage;
-
-        //Yii::$app->cache->flush();
-        for ($i=0; $i<10; $i++) {
-            $keyStorage->set('TEST_KEY_'.$i, [$i => rand()]);
+        $this->layout = $this->configuration->layout;
+        //Saving
+        if ($this->configuration->load(Yii::$app->request->post())) {
+            if ($this->saveConfiguration()) {
+                //ok
+                $this->refresh();
+            } else {
+                var_dump($this->configuration->getErrors());
+            }
         }
 
-        //var_dump($keyStorage->getAllKeys());
-        var_dump($keyStorage->mdelete(['TEST_KEY_0', 'TEST_KEY_1']));
+        return $this->render('index', [
+            'configuration' => $this->configuration,
+        ]);
+    }
 
-        var_dump($keyStorage->getAll());
-
-
-
-        return $this->render('index');
+    public function actionIndex2()
+    {
+        return 'Index 2';
     }
 }

@@ -1,11 +1,33 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+use yii\widgets\ActiveForm;
+
+/* @var \frontend\models\SiteControllerConfiguration $configuration */
+$this->title = $configuration->title;
+
 ?>
+
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <?php
+
+        $form = ActiveForm::begin();
+        echo '<h3>Configuration form example</h3>';
+        echo $form->field($configuration, 'layout')->dropDownList(['main' => 'main', 'base' => 'base', 'text' => 'text']);
+        echo $form->field($configuration, 'title')->textInput();
+        echo '<p><button type="submit" class="btn btn-primary">Save</button></p>';
+        ActiveForm::end();
+
+        ?>
+
+    </div>
+</div>
+
+
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1><?= $configuration->title ?></h1>
 
         <p class="lead">You have successfully created your Yii-powered application.</p>
 

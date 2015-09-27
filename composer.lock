@@ -274,12 +274,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-core.git",
-                "reference": "898f450613ac47d5362657d134dcc1a6913f7e25"
+                "reference": "6cc74e1aa2d6c44a440d054bd1e3c259ee6b5828"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/898f450613ac47d5362657d134dcc1a6913f7e25",
-                "reference": "898f450613ac47d5362657d134dcc1a6913f7e25",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/6cc74e1aa2d6c44a440d054bd1e3c259ee6b5828",
+                "reference": "6cc74e1aa2d6c44a440d054bd1e3c259ee6b5828",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 "source": "https://github.com/maddoger/yii2-cms-core/tree/master",
                 "issues": "https://github.com/maddoger/yii2-cms-core/issues"
             },
-            "time": "2015-09-26 17:44:02"
+            "time": "2015-09-26 20:37:46"
         },
         {
             "name": "swiftmailer/swiftmailer",
