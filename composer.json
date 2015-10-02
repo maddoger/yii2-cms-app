@@ -12,7 +12,9 @@
     "php": ">=5.4.0",
     "yiisoft/yii2": "2.0.*",
     "yiisoft/yii2-swiftmailer": "*",
-    "maddoger/yii2-cms-core": "dev-master"
+    "maddoger/yii2-cms-core": "dev-master",
+    "maddoger/yii2-cms-admin": "dev-master",
+    "maddoger/yii2-cms-user": "dev-master"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "*",
@@ -33,6 +35,14 @@
     {
       "type": "vcs",
       "url": "git@github.com:maddoger/yii2-cms-core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:maddoger/yii2-cms-admin.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:maddoger/yii2-cms-user.git"
     }
   ]
 }

@@ -4,9 +4,95 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "116a9e13fc96c38d06b86aa4a3df6e65",
-    "content-hash": "1c6c8aa1b5283cbefbf0af9f62417199",
+    "hash": "59974ad24d958dca87259f17665eec8a",
+    "content-hash": "70a24b88d95e46402a3bf08f02f510c3",
     "packages": [
+        {
+            "name": "bower-asset/bootstrap",
+            "version": "v3.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
+                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.9.1"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "less/bootstrap.less",
+                    "dist/js/bootstrap.js"
+                ],
+                "bower-asset-ignore": [
+                    "/.*",
+                    "_config.yml",
+                    "CNAME",
+                    "composer.json",
+                    "CONTRIBUTING.md",
+                    "docs",
+                    "js/tests",
+                    "test-infra"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "keywords": [
+                "css",
+                "framework",
+                "front-end",
+                "js",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
+            ]
+        },
+        {
+            "name": "bower-asset/font-awesome",
+            "version": "v4.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "less/font-awesome.less",
+                    "scss/font-awesome.scss"
+                ],
+                "bower-asset-ignore": [
+                    "*/.*",
+                    "*.json",
+                    "src",
+                    "*.yml",
+                    "Gemfile",
+                    "Gemfile.lock",
+                    "*.md"
+                ]
+            },
+            "license": [
+                "OFL-1.1",
+                "MIT",
+                "CC-BY-3.0"
+            ],
+            "description": "Font Awesome"
+        },
         {
             "name": "bower-asset/jquery",
             "version": "2.1.4",
@@ -128,6 +214,68 @@
                     "Gruntfile.js",
                     "node_modules",
                     "package.json"
+                ]
+            }
+        },
+        {
+            "name": "bower-asset/select2",
+            "version": "3.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/select2/select2.git",
+                "reference": "95a977f674b6938af55ec5f28b7772df93786c5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/select2/select2/zipball/95a977f674b6938af55ec5f28b7772df93786c5c",
+                "reference": "95a977f674b6938af55ec5f28b7772df93786c5c",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7.1"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "select2.js",
+                    "select2.css",
+                    "select2.png",
+                    "select2x2.png",
+                    "select2-spinner.gif"
+                ]
+            }
+        },
+        {
+            "name": "bower-asset/select2-bootstrap-css",
+            "version": "v1.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/t0m/select2-bootstrap-css.git",
+                "reference": "dffa8740723d12cf5b9a56a28cc3dcd5e08ac3e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/t0m/select2-bootstrap-css/zipball/dffa8740723d12cf5b9a56a28cc3dcd5e08ac3e2",
+                "reference": "dffa8740723d12cf5b9a56a28cc3dcd5e08ac3e2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/select2": ">=3.3.2,<4.0.0"
+            },
+            "require-dev": {
+                "bower-asset/bootstrap": "~3.3.0",
+                "bower-asset/bootstrap-sass-official": "3.3.3",
+                "bower-asset/respond": "~1.4.2"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "select2-bootstrap.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "node_modules",
+                    "components"
                 ]
             }
         },
@@ -269,17 +417,60 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "maddoger/yii2-cms-admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maddoger/yii2-cms-admin.git",
+                "reference": "89814e62c51d8dab52cd05ce8543fa73ec4a6fd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/7b3e499b713c37a3b23792ed2fea28b2cff48b15",
+                "reference": "89814e62c51d8dab52cd05ce8543fa73ec4a6fd4",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/font-awesome": "4.*",
+                "maddoger/yii2-cms-core": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "maddoger\\admin\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Vitaliy Syrchikov",
+                    "email": "maddoger@gmail.com"
+                }
+            ],
+            "description": "Admin panel for Yii2 CMS.",
+            "support": {
+                "source": "https://github.com/maddoger/yii2-cms-admin/tree/master",
+                "issues": "https://github.com/maddoger/yii2-cms-admin/issues"
+            },
+            "time": "2015-09-27 19:03:19"
+        },
+        {
             "name": "maddoger/yii2-cms-core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-core.git",
-                "reference": "6cc74e1aa2d6c44a440d054bd1e3c259ee6b5828"
+                "reference": "7f77cd3d49d8ca623a03dd7744dbe68c1623e27d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/6cc74e1aa2d6c44a440d054bd1e3c259ee6b5828",
-                "reference": "6cc74e1aa2d6c44a440d054bd1e3c259ee6b5828",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/7f77cd3d49d8ca623a03dd7744dbe68c1623e27d",
+                "reference": "7f77cd3d49d8ca623a03dd7744dbe68c1623e27d",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +498,93 @@
                 "source": "https://github.com/maddoger/yii2-cms-core/tree/master",
                 "issues": "https://github.com/maddoger/yii2-cms-core/issues"
             },
-            "time": "2015-09-26 20:37:46"
+            "time": "2015-09-27 18:24:17"
+        },
+        {
+            "name": "maddoger/yii2-cms-user",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maddoger/yii2-cms-user.git",
+                "reference": "bdba05342748ca9e4c6acb6874beedf633799ef4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/bdba05342748ca9e4c6acb6874beedf633799ef4",
+                "reference": "bdba05342748ca9e4c6acb6874beedf633799ef4",
+                "shasum": ""
+            },
+            "require": {
+                "maddoger/yii2-select2": "*",
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-bootstrap": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "maddoger\\user\\": ""
+                }
+            },
+            "authors": [
+                {
+                    "name": "Vitaliy Syrchikov",
+                    "email": "maddoger@gmail.com"
+                }
+            ],
+            "description": "User module for Yii2 CMS.",
+            "support": {
+                "source": "https://github.com/maddoger/yii2-cms-user/tree/master",
+                "issues": "https://github.com/maddoger/yii2-cms-user/issues"
+            },
+            "time": "2015-10-02 12:23:52"
+        },
+        {
+            "name": "maddoger/yii2-select2",
+            "version": "v1.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maddoger/yii2-select2.git",
+                "reference": "5e7a6b7af41ef180e42a63fbb0c8dd4eb4336b70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maddoger/yii2-select2/zipball/5e7a6b7af41ef180e42a63fbb0c8dd4eb4336b70",
+                "reference": "5e7a6b7af41ef180e42a63fbb0c8dd4eb4336b70",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/select2": "~3.0",
+                "bower-asset/select2-bootstrap-css": "~1.3",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "maddoger\\widgets\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vitaliy Syrchikov",
+                    "email": "maddoger@gmail.com"
+                }
+            ],
+            "description": "Yii2 Select2 Widget.",
+            "keywords": [
+                "extension",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-05-14 14:27:23"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -451,6 +728,56 @@
             "time": "2015-08-05 22:00:30"
         },
         {
+            "name": "yiisoft/yii2-bootstrap",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\bootstrap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Qiang Xue",
+                    "email": "qiang.xue@gmail.com"
+                }
+            ],
+            "description": "The Twitter Bootstrap extension for the Yii framework",
+            "keywords": [
+                "bootstrap",
+                "yii2"
+            ],
+            "time": "2015-09-23 17:48:24"
+        },
+        {
             "name": "yiisoft/yii2-composer",
             "version": "2.0.3",
             "source": {
@@ -550,55 +877,6 @@
     ],
     "packages-dev": [
         {
-            "name": "bower-asset/bootstrap",
-            "version": "v3.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "16b48259a62f576e52c903c476bd42b90ab22482"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/16b48259a62f576e52c903c476bd42b90ab22482",
-                "reference": "16b48259a62f576e52c903c476bd42b90ab22482",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.9.1"
-            },
-            "type": "bower-asset-library",
-            "extra": {
-                "bower-asset-main": [
-                    "less/bootstrap.less",
-                    "dist/js/bootstrap.js"
-                ],
-                "bower-asset-ignore": [
-                    "/.*",
-                    "_config.yml",
-                    "CNAME",
-                    "composer.json",
-                    "CONTRIBUTING.md",
-                    "docs",
-                    "js/tests",
-                    "test-infra"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-            "keywords": [
-                "css",
-                "framework",
-                "front-end",
-                "js",
-                "less",
-                "mobile-first",
-                "responsive",
-                "web"
-            ]
-        },
-        {
             "name": "bower-asset/typeahead.js",
             "version": "v0.10.5",
             "source": {
@@ -658,56 +936,6 @@
             ],
             "description": "A comprehensive library for generating differences between two hashable objects (strings or arrays).",
             "time": "2013-11-01 13:02:21"
-        },
-        {
-            "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
-                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.6"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\bootstrap\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com"
-                }
-            ],
-            "description": "The Twitter Bootstrap extension for the Yii framework",
-            "keywords": [
-                "bootstrap",
-                "yii2"
-            ],
-            "time": "2015-09-23 17:48:24"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -813,7 +1041,9 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "maddoger/yii2-cms-core": 20
+        "maddoger/yii2-cms-core": 20,
+        "maddoger/yii2-cms-admin": 20,
+        "maddoger/yii2-cms-user": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

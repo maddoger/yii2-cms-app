@@ -2,17 +2,23 @@
 
 return [
     'id' => 'app-backend',
-    'name' => 'syrchikov.name',
+    'name' => 'Yii2 CMS',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', /*'admin'*/],
+    'bootstrap' => ['log', 'admin'],
     'controllerNamespace' => 'backend\controllers',
 
     'modules' => [
-//        'admin' => [
-//            'class' => 'maddoger\admin\Module',
-//            'superUserId' => 1,
-//            'sortNumber' => 11,
-//        ],
+        'admin' => [
+            'class' => 'maddoger\admin\Module',
+            //'superUserId' => 1,
+            //'sortNumber' => 11
+        ],
+        'user' => [
+            'class' => 'maddoger\user\backend\Module',
+            'guestLayout' => '@maddoger/admin/views/layouts/minimal.php',
+            //'superUserId' => 1,
+            //'sortNumber' => 11
+        ],
 //        'website' => [
 //            'class' => 'maddoger\website\backend\Module',
 //            'sortNumber' => 10,
@@ -28,8 +34,8 @@ return [
     ],
 
     //Maddoger`s Admin Panel
-    //'defaultRoute' => 'admin/site/index',
-    //'layout' => '@maddoger/admin/views/layouts/main.php',
+    'defaultRoute' => 'admin/site/index',
+    'layout' => '@maddoger/admin/views/layouts/main.php',
 
     'components' => [
 
@@ -42,20 +48,20 @@ return [
         ],
 
         //User
-//        'user' => [
-//            'identityClass' => 'maddoger\admin\models\User',
-//            'loginUrl' => ['admin/site/login'],
-//            'enableAutoLogin' => true,
-//            'on afterLogin'   => ['maddoger\admin\models\User', 'updateLastVisit'],
-//            'on afterLogout'   => ['maddoger\admin\models\User', 'updateLastVisit'],
-//        ],
-//        'session' => [
-//            'class' => 'yii\web\DbSession',
-//            'sessionTable' => '{{%admin_session}}',
-//        ],
-//        'request' => [
-//            'csrfParam' => '_csrfBackend',
-//        ],
+        'user' => [
+            'identityClass' => 'maddoger\user\common\models\User',
+            'loginUrl' => ['user/auth/login'],
+            'enableAutoLogin' => true,
+            //'on afterLogin'   => ['maddoger\admin\models\User', 'updateLastVisit'],
+            //'on afterLogout'   => ['maddoger\admin\models\User', 'updateLastVisit'],
+        ],
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            'sessionTable' => '{{%user_session}}',
+        ],
+        'request' => [
+            'csrfParam' => '_csrfBackend',
+        ],
 
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -67,7 +73,7 @@ return [
             ],
         ],
         'errorHandler' => [
-            'errorAction' => 'site/error',
+            'errorAction' => 'admin/site/error',
         ],
     ],
 ];
