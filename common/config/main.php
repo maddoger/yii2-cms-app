@@ -24,11 +24,18 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
         ],
-        'authManager' => [
+        //PHP RBAC Manager
+        /*'authManager' => [
             'class' => 'yii\rbac\PhpManager',
             'itemFile' => '@common/rbac/items.php',
             'assignmentFile' => '@common/rbac/assignments.php',
             'ruleFile' => '@common/rbac/rules.php',
+        ],*/
+        //DB RBAC Manager
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
+            'cache' => 'cache',
+            //'db' => 'db',
         ],
         'formatter' => [
             'dateFormat' => 'dd.MM.yyyy',

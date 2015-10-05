@@ -4,12 +4,15 @@ return [
     'id' => 'app-backend',
     'name' => 'Yii2 CMS',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'admin'],
+    'bootstrap' => ['log', 'admin', 'user'],
     'controllerNamespace' => 'backend\controllers',
+    //'language' => 'ru-RU',
 
     'modules' => [
         'admin' => [
             'class' => 'maddoger\admin\Module',
+            'sidebarMenuCache' => false,
+            'logoText' => 'Yii2 CMS',
             //'superUserId' => 1,
             //'sortNumber' => 11
         ],
