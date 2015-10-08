@@ -422,12 +422,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-admin.git",
-                "reference": "3532a8d9c44c736186265f12d631e18bcebe3f24"
+                "reference": "dd88eb8099edaaa54c00a2752be5491dc1421488"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/3532a8d9c44c736186265f12d631e18bcebe3f24",
-                "reference": "3532a8d9c44c736186265f12d631e18bcebe3f24",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/dd88eb8099edaaa54c00a2752be5491dc1421488",
+                "reference": "dd88eb8099edaaa54c00a2752be5491dc1421488",
                 "shasum": ""
             },
             "require": {
@@ -459,7 +459,7 @@
                 "source": "https://github.com/maddoger/yii2-cms-admin/tree/master",
                 "issues": "https://github.com/maddoger/yii2-cms-admin/issues"
             },
-            "time": "2015-10-05 07:48:06"
+            "time": "2015-10-08 10:20:08"
         },
         {
             "name": "maddoger/yii2-cms-core",
@@ -467,12 +467,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-core.git",
-                "reference": "94bc9c7c096edbbb455259382e9697fd5c58d5b1"
+                "reference": "744df355bd4d2e8733887bf8cb07cbfc706e34b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/94bc9c7c096edbbb455259382e9697fd5c58d5b1",
-                "reference": "94bc9c7c096edbbb455259382e9697fd5c58d5b1",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-core/zipball/744df355bd4d2e8733887bf8cb07cbfc706e34b7",
+                "reference": "744df355bd4d2e8733887bf8cb07cbfc706e34b7",
                 "shasum": ""
             },
             "require": {
@@ -500,7 +500,7 @@
                 "source": "https://github.com/maddoger/yii2-cms-core/tree/master",
                 "issues": "https://github.com/maddoger/yii2-cms-core/issues"
             },
-            "time": "2015-10-05 07:45:48"
+            "time": "2015-10-08 10:18:59"
         },
         {
             "name": "maddoger/yii2-cms-user",
@@ -508,12 +508,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-user.git",
-                "reference": "7f9d51b25e5864410a4ba684c15cc8b262ad426b"
+                "reference": "a40e2ea04b4c6ec5d303c6de0124dcb10cdb3271"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/7f9d51b25e5864410a4ba684c15cc8b262ad426b",
-                "reference": "7f9d51b25e5864410a4ba684c15cc8b262ad426b",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/a40e2ea04b4c6ec5d303c6de0124dcb10cdb3271",
+                "reference": "a40e2ea04b4c6ec5d303c6de0124dcb10cdb3271",
                 "shasum": ""
             },
             "require": {
@@ -544,7 +544,7 @@
                 "source": "https://github.com/maddoger/yii2-cms-user/tree/master",
                 "issues": "https://github.com/maddoger/yii2-cms-user/issues"
             },
-            "time": "2015-10-05 07:50:23"
+            "time": "2015-10-08 10:19:53"
         },
         {
             "name": "maddoger/yii2-filebehavior",
