@@ -8,6 +8,7 @@
   ],
   "homepage": "https://github.com/maddoger/yii2-cms-app/",
   "type": "project",
+  "minimum-stability": "dev",
   "require": {
     "php": ">=5.4.0",
     "yiisoft/yii2": "2.0.*",
@@ -43,6 +44,10 @@
     {
       "type": "vcs",
       "url": "git@github.com:maddoger/yii2-cms-user.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:maddoger/yii2-highcharts.git"
     }
   ]
 }
