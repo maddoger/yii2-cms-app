@@ -11,7 +11,7 @@ return [
     'modules' => [
         'admin' => [
             'class' => 'maddoger\admin\Module',
-            'sidebarMenuCache' => false,
+            //'sidebarMenuCache' => false,
             'logoText' => 'Yii2 CMS',
             //'superUserId' => 1,
             //'sortNumber' => 11
@@ -46,7 +46,11 @@ return [
         'urlManager' => [
             'rules' => [
                 //Admin
-                //'<action:(index|login|logout|captcha|request-password-reset|reset-password|search|install)>' => 'admin/site/<action>',
+                '<action:(index|captcha|search)>' => 'admin/site/<action>',
+                '<controller:(log|system-information|configuration)>/<action:(index|captcha|search)>' => 'admin/<controller>/<action>',
+                //User
+                '<action:(login|logout|request-password-reset|reset-password)>' => 'user/auth/<action>',
+                'profile' => 'user/user/profile',
             ]
         ],
 
@@ -55,8 +59,8 @@ return [
             'identityClass' => 'maddoger\user\common\models\User',
             'loginUrl' => ['user/auth/login'],
             'enableAutoLogin' => true,
-            //'on afterLogin'   => ['maddoger\admin\models\User', 'updateLastVisit'],
-            //'on afterLogout'   => ['maddoger\admin\models\User', 'updateLastVisit'],
+            'on afterLogin'   => ['maddoger\user\common\models\User', 'updateLastVisit'],
+            'on afterLogout'   => ['maddoger\user\common\models\User', 'updateLastVisit'],
         ],
         'session' => [
             'class' => 'yii\web\DbSession',
