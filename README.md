@@ -81,6 +81,28 @@ the installed application. You only need to do these once for all.
 
 3. Apply migrations with console command `yii migrate`.
 
+    For core features:
+
+    ```
+    ./yii migrate --migrationPath=@maddoger/core/migrations
+    ```
+
+    For DBRbacManager:
+
+    ```
+    ./yii migrate --migrationPath=@yii/rbac/migrations
+    ```
+
+    User module:
+
+    ```
+    ./yii migrate 1 --migrationPath=@maddoger/user/common/migrations
+    ```
+    and if you want to create admin user:
+    ```
+    ./yii migrate 1 --migrationPath=@maddoger/user/common/migrations
+    ```
+
 4. Set document roots of your web server:
 
    - for frontend `/path/to/yii-application/frontend/web/` and using the URL `http://frontend.dev/`

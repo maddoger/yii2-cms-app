@@ -1,9 +1,6 @@
 <?php
 namespace frontend\controllers;
 
-use common\models\User;
-use frontend\models\SiteControllerConfiguration;
-use maddoger\core\behaviors\ConfigurationBehavior;
 use maddoger\core\behaviors\ConfigurationModelBehavior;
 use Yii;
 use yii\web\Controller;
@@ -19,28 +16,6 @@ class SiteController extends Controller
 
     public $layout = 'main';
 
-    public function behaviors()
-    {
-        return [
-
-            //Test without model IT WORKS)
-            /*[
-                'class' => ConfigurationBehavior::className(),
-                'attributes' => [
-                    'defaultAction' => 'index',
-                    'layout' => 'main',
-                ],
-                'autoLoad' => false,
-            ],*/
-
-            [
-                'class' => ConfigurationModelBehavior::className(),
-                'modelClass' => SiteControllerConfiguration::className(),
-            ]
-
-        ];
-    }
-
     /**
      * @inheritdoc
      */
@@ -55,23 +30,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        //Some tests
-        Yii::$app->user->login(User::findIdentity(101));
-
-        $this->layout = $this->configuration->layout;
-        //Saving
-        if ($this->configuration->load(Yii::$app->request->post())) {
-            if ($this->saveConfiguration()) {
-                //ok
-                $this->refresh();
-            } else {
-                var_dump($this->configuration->getErrors());
-            }
-        }
-
-        return $this->render('index', [
-            'configuration' => $this->configuration,
-        ]);
+        return $this->render('index');
     }
 
     public function actionIndex2()
