@@ -417,16 +417,16 @@
         },
         {
             "name": "maddoger/yii2-cms-admin",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-admin.git",
-                "reference": "792ec96e0643660c4e3e6a63e124d03e64fb52ed"
+                "reference": "b5b608a7ea2b34b3b0490da99393c2b092e43aaa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/792ec96e0643660c4e3e6a63e124d03e64fb52ed",
-                "reference": "792ec96e0643660c4e3e6a63e124d03e64fb52ed",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/b5b608a7ea2b34b3b0490da99393c2b092e43aaa",
+                "reference": "b5b608a7ea2b34b3b0490da99393c2b092e43aaa",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
                 }
             ],
             "description": "Admin panel for Yii2 CMS.",
-            "time": "2015-10-12 16:00:58"
+            "time": "2015-10-14 12:35:11"
         },
         {
             "name": "maddoger/yii2-cms-core",
