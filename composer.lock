@@ -417,16 +417,16 @@
         },
         {
             "name": "maddoger/yii2-cms-admin",
-            "version": "v1.0.2",
+            "version": "v1.03",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-admin.git",
-                "reference": "b5b608a7ea2b34b3b0490da99393c2b092e43aaa"
+                "reference": "feca47f48935ce111259519c797a73253a13deca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/b5b608a7ea2b34b3b0490da99393c2b092e43aaa",
-                "reference": "b5b608a7ea2b34b3b0490da99393c2b092e43aaa",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/feca47f48935ce111259519c797a73253a13deca",
+                "reference": "feca47f48935ce111259519c797a73253a13deca",
                 "shasum": ""
             },
             "require": {
@@ -457,7 +457,7 @@
                 }
             ],
             "description": "Admin panel for Yii2 CMS.",
-            "time": "2015-10-14 12:35:11"
+            "time": "2015-10-14 13:50:11"
         },
         {
             "name": "maddoger/yii2-cms-core",
@@ -499,16 +499,16 @@
         },
         {
             "name": "maddoger/yii2-cms-user",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-user.git",
-                "reference": "078acfd12a925560cef8b176c5be60f67630d63e"
+                "reference": "61ac660259a29c3944cd4ade5379a9f226c1ed2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/078acfd12a925560cef8b176c5be60f67630d63e",
-                "reference": "078acfd12a925560cef8b176c5be60f67630d63e",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/61ac660259a29c3944cd4ade5379a9f226c1ed2c",
+                "reference": "61ac660259a29c3944cd4ade5379a9f226c1ed2c",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +535,7 @@
                 }
             ],
             "description": "User module for Yii2 CMS.",
-            "time": "2015-10-12 16:21:03"
+            "time": "2015-10-14 13:32:12"
         },
         {
             "name": "maddoger/yii2-filebehavior",
