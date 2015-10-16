@@ -417,16 +417,16 @@
         },
         {
             "name": "maddoger/yii2-cms-admin",
-            "version": "v1.03",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-admin.git",
-                "reference": "feca47f48935ce111259519c797a73253a13deca"
+                "reference": "566d155e58a2f6c72470125dbd40929214db3323"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/feca47f48935ce111259519c797a73253a13deca",
-                "reference": "feca47f48935ce111259519c797a73253a13deca",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-admin/zipball/566d155e58a2f6c72470125dbd40929214db3323",
+                "reference": "566d155e58a2f6c72470125dbd40929214db3323",
                 "shasum": ""
             },
             "require": {
@@ -499,16 +499,16 @@
         },
         {
             "name": "maddoger/yii2-cms-user",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maddoger/yii2-cms-user.git",
-                "reference": "61ac660259a29c3944cd4ade5379a9f226c1ed2c"
+                "reference": "e35021efbfe43084973fc1ef816191c6f9544092"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/61ac660259a29c3944cd4ade5379a9f226c1ed2c",
-                "reference": "61ac660259a29c3944cd4ade5379a9f226c1ed2c",
+                "url": "https://api.github.com/repos/maddoger/yii2-cms-user/zipball/e35021efbfe43084973fc1ef816191c6f9544092",
+                "reference": "e35021efbfe43084973fc1ef816191c6f9544092",
                 "shasum": ""
             },
             "require": {
@@ -535,7 +535,7 @@
                 }
             ],
             "description": "User module for Yii2 CMS.",
-            "time": "2015-10-14 13:32:12"
+            "time": "2015-10-16 10:19:05"
         },
         {
             "name": "maddoger/yii2-filebehavior",

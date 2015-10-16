@@ -4,7 +4,13 @@ return [
     'id' => 'app-backend',
     'name' => 'Yii2 CMS',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log', 'admin', 'user'],
+    'bootstrap' => [
+        'log',
+        'admin',
+        function(){
+            return Yii::$app->getModule('user');
+        }
+    ],
     'controllerNamespace' => 'backend\controllers',
     //'language' => 'ru-RU',
 
