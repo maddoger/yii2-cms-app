@@ -25,6 +25,7 @@ return [
         'user' => [
             'class' => 'maddoger\user\backend\Module',
             'guestLayout' => '@maddoger/admin/views/layouts/minimal.php',
+            'captchaAction' => ['/admin/site/captcha'],
             //'superUserId' => 1,
             //'sortNumber' => 11
         ],
